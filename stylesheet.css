@@ -1,0 +1,29 @@
+#titlepage {
+    height: 100px;
+}
+
+#title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#profilepic {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 100% 35%;
+}
+
+#navigation {
+    width: 350px;
+}
+
+.navigation {
+    list-style: none;
+    margin-top: -20px;
+}
+
+.oneline {
+    width: 300px;
+    padding: 10px;
+}
