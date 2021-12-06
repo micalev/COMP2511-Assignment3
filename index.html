@@ -18,48 +18,55 @@
     
     <body>
         <div class="container">
-            <!-- Title -->
-            <div class="row align-items-start" id="titlepage">
-                <h1 class="center" id="title">Mica Leviste's Portfolio</h1>
+            <!-- Title/Header -->
+            <div class="container-fluid mb-4">
+                <div class="row" id="titlepage">
+                    <div class="col p-4">
+                        <h1 class="center" id="title">Mica Leviste's Portfolio</h1>
+                    </div>
+                    <div class="col p-4">
+                        <img src="images/profileimage.jpg" class="rounded-circle float-right d-none d-md-block d-lg-none" id="profilepicmed" alt="profile picture">
+                        <img src="images/profileimage.jpg" class="img-fluid rounded-circle float-right d-md-none d-lg-none d-xl-none" id="profilepicsm" alt="Profile Picture">
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="container background">
+        <br>
+        <div class="container pb-4 background">
             <!-- Content of the website -->
             <div class="row">
-                <!--Header on the left side with navbar-->
-                <div class="col col-4 p-4 rounded" id="navigation">
-                    <img src="images/profileimage.jpg" class="rounded-circle p-4" id="profilepic" alt="Profile Picture">
+                <!--Header with navbar-->
+                <div class="col-lg-4 p-4 rounded col1" id="navigation" style="backdrop-filter: blur(20px);">
+                    <img src="images/profileimage.jpg" class="img-fluid rounded-circle p-4 d-lg-block d-none" id="profilepiclarge" alt="Profile Picture">
                     
                     <h3>Hi! My name's Mica, and this is my web portfolio.</h3>
                     <p>
                         Use the tabs below to browse through
                     </p>
                     
-                    <div class="col">
-                        <ul class="nav nav-pills navigation" id="pills-tab" role="tablist">
-                            <li class="nav-item oneline" role="presentation">
+                    <div class="col-lg-12 p-4 tabs">
+                        <ul class="nav nav-pills pills-rounded flex-column" id="pills-tab" role="tablist">
+                            <li class="nav-item navtab" role="presentation">
                                 <a class="nav-link active" data-bs-toggle="pill" data-bs-target="#about" aria-selected="true">About</a>
                             </li>
-                            <li class="nav-item oneline">
+                            <li class="nav-item navtab">
                                 <a class="nav-link" data-bs-toggle="pill" data-bs-target="#skills" aria-selected="false">Skills</a>
                             </li>
-                            <li class="nav-item oneline">
+                            <li class="nav-item navtab">
                                 <a class="nav-link" data-bs-toggle="pill" data-bs-target="#experience" aria-selected="false">Experience</a>
                             </li>
-                            <li class="nav-item oneline">
+                            <li class="nav-item navtab">
                                 <a class="nav-link" data-bs-toggle="pill" data-bs-target="#interests" aria-selected="false">Interests</a>
                             </li>
-                            
                         </ul>
                     </div>
                 </div>
                 
                 <!--Main content-->
-                <div class="col" id="maincontent">
+                <div class="col-lg rounded col2" id="maincontent" style="backdrop-filter: blur(20px);">
                     <div class="tab-content p-5">
                         <!-- About page -->
-                        <div id="about" class="container tab-pane active">
+                        <div id="about" class="container tab-pane active p-4">
                             <h2>About Me</h2>
                             <p>
                                 Since September 2020, I've been studying Computer Informations Systems at Mount Royal University. The classes I am taking are software and web developments, along with mulitple business and math courses.
@@ -70,13 +77,13 @@
                             </p>
                             
                             <p>
-                                I am now in my second year, taking classes to fully master Java and HTML, as well as discovering what other subjects I take interests in like Anthropology, Economics, and Finance.
+                                I am now in my second year, taking classes to fully learn Java and HTML, as well as discovering what other subjects I take interests in like Anthropology, Economics, and Finance.
                             </p>
                             
                         </div>
                         
                         <!-- Contacts -->
-                        <div id="skills" class="container tab-pane fade">
+                        <div id="skills" class="container tab-pane fade p-4">
                             <h2>Skills</h2>
                             <ul>
                                 <li>Ability to handle multiple tasks effectively &amp; simultaneously.</li>
@@ -88,14 +95,24 @@
                                 <li>Organized work ethic with a high attention to detail.</li>
                             </ul>
                             
-                            <h4> </h4>
                             <p><b>Technical Skills:</b> Java, HTML, Excel, Powerpoint</p>
+                            <br>
+                            
+                            <h2>Education</h2>
+                            <br>
+                            <h5>September 2020 - Current</h5>
+                            <h4>Mount Royal University | Calgary, AB</h4>
+                            <p>Currently pursuing a bachelor in Computer Information Systems.</p>
+                            <br>
+                            <h5>2017 - 2020</h5>
+                            <h4>Bishop O'Bryne High School | Calgary, AB</h4>
+                            <p>Highschool diploma</p>
                         </div>
                         
                         <!-- Experience page -->
-                        <div id="experience" class="container tab-pane fade">
+                        <div id="experience" class="container tab-pane fade p-4">
                             <h2>Job Experiences and Volunteers</h2>
-                
+                            <br>
                             <h5>May 2021 - Current</h5>
                             <h4>Cashier | Winners Southcentre - Calgary, AB</h4>
                             <ul>
@@ -105,7 +122,7 @@
                                 <li>Helped customers complete purchases, locate items and join reward programs to promote loyalty, satisfaction and sales numbers.</li>
                                 <li>Processed POS transactions, including checks, cash and credit purchases or refunds.</li>
                             </ul>
-                            
+                           
                             <h4>Maintenance | Winners Southcentre</h4>
                             <ul>
                                 <li>Collect trash from restrooms and around store 3 times daily.</li>
@@ -113,6 +130,8 @@
                                 <li>Swept and mopped floor nighty and dusted and polished all displays.</li>
                                 <li>Cleaned restrooms twice daily, restocking toilet paper, towels, and soap as needed.</li>
                             </ul>
+                            
+                            <br>
                             
                             <h5>2017 - 2019</h5>
                             <h4>Child Caretaker | Calgary, AB</h4>
@@ -123,6 +142,8 @@
                                 <li>rganized and planned activities to help children practice sharing and cleaning skills.</li>
                                 <li>Communicated with children's parents about child's behaviors, payment, and times needed.</li>
                             </ul>
+                            
+                            <br>
                             
                             <h5>2011 - 2013</h5>
                             <h4>Food Server | St. Matthews School, Calgary AB</h4>
@@ -136,7 +157,7 @@
                         </div>
                         
                         <!-- Interests page -->
-                        <div id="interests" class="container tab-pane fade">
+                        <div id="interests" class="container tab-pane fade p-4">
                             <h2>Interests</h2>
                             <p>
                                 Apart from school and work, I like to spend my time looking for hobbies and cultivating my interests into hobbies. 
@@ -153,7 +174,7 @@
                 </div>
             </div> 
         </div>
-        
+        <br>
         <!--Popper and Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

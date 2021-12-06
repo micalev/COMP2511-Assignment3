@@ -1,42 +1,118 @@
+:root {
+    --dark-purple: #544179;
+    --purple: #7027A0;
+    --pink: #F56FAD;
+}
+
 body {
-    background-image: url(images/backgroundpic2.jpg);
-    background-size:cover;
+    background: linear-gradient(90deg, hsla(31, 90%, 76%, 1) 1%, hsla(302, 82%, 76%, 1) 100%);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .background {
     justify-content: center;
-    background-color: rgb(192,192,192, 0.8);
-    border-radius: 50px;
 }
 
 #titlepage {
+    margin-top: 20px;
     height: 100px;
 }
 
 #title {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-left: -40px;
+    margin-top: 20px;
+    color: var(--dark-purple);
 }
 
-#profilepic {
+#profilepiclarge {
     height: 300px;
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: cover;
     object-position: 100% 35%;
+     filter: grayscale(20%);
 }
 
-#navigation {
-    width: 350px;
+#profilepicmed {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    object-position: 100% 35%;
+     filter: grayscale(20%);
+    margin-top: -150px;
+    margin-left: 550px;
 }
 
-.navigation {
-    list-style: none;
+#profilepicsm {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: 100% 35%;
+     filter: grayscale(20%);
+    margin-top: -170px;
+    margin-left: 400px;
 }
 
-.oneline {
+#navigation h3, #navigation p, .nav-link {
+    color: var(--purple);
+}
+
+.navtab {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+}
+
+.pills-rounded .nav-link {
+    border-radius: 20px;
+    height: 40px;
+}
+
+.col1 {
+     background: rgba(255,255,255,0.2);
+}
+
+.col2 {
+    background-color: rgb(255,255,255, 0.8);
+}
+
+.tabs {
     width: 300px;
-    padding: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.tabs a.active {
+    background: var(--purple) !important;
+    color: white !important;
+    opacity: 100% !important;
+}
 
+.tabs a:hover {
+    background: --pink;
+    color: white !important;
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 15px;
+    background: var(--pink);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#maincontent h2 {
+    color: var(--purple);
+}
+
+p b{
+    color: var(--pink);
+}
