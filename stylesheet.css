@@ -117,6 +117,9 @@ p b{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+    #titlepage {
+        margin-top: -20px;
+    }
     .profilepic {
         margin-left: 80px;
     }
