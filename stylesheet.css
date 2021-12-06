@@ -120,6 +120,6 @@ p b{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
     .profilepic {
-        margin-left: 100px;
+        margin-left: 80px;
     }
 }
