@@ -163,6 +163,24 @@ p b{
     color: black!important;
 }
 
+#footer {
+    color: var(--dark-purple);
+    font-size: 90%;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+#footer p a:hover{
+    border-style: hidden;
+    background: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
     #titlepage {
