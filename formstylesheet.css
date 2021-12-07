@@ -1,0 +1,35 @@
+:root {
+    --dark-purple: #544179;
+    --purple: #7027A0;
+    --pink: #F56FAD;
+}
+
+body {
+    background: linear-gradient(90deg, hsla(31, 90%, 76%, 1) 1%, hsla(302, 82%, 76%, 1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateY(-50%);
+    background-color: rgb(255,255,255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--dark-purple);
+    text-align: center;
+}
+

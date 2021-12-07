@@ -36,7 +36,7 @@
             </div>
         </div>
         <br>
-        <div class="container pb-4 background">
+        <div class="container pb-4 centercontent">
             <!-- Content of the website -->
             <div class="row">
                 <!--Header with navbar-->
@@ -62,6 +62,9 @@
                             <li class="nav-item navtab">
                                 <a class="nav-link" data-bs-toggle="pill" data-bs-target="#interests" aria-selected="false">Interests</a>
                             </li>
+                            <li class="nav-item navtab">
+                                <a class="nav-link" data-bs-toggle="pill" data-bs-target="#contacts" aria-selected="false">Contacts</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -81,7 +84,7 @@
                             </p>
                             
                             <p>
-                                I am now in my second year, taking classes to fully learn Java and HTML, as well as discovering what other subjects I take interests in like Anthropology, Economics, and Finance.
+                                I am now in my second year, taking classes to fully learn Java and HTML, as well as discovering what other subjects I have interest in like Anthropology, Economics, and Finance.
                             </p>
                             <div class="socialmediaplug" id="media-about">
                                 <a href="https://www.instagram.com/micaillalev/" target="_blank"><img src="images/logo-instagram.png" class="medialogo" id="instagramlogo" alt="Instagram logo" title="Go to Mica's Instagram"></a>
@@ -199,6 +202,31 @@
                             </div>
                         </div>
                         
+                        <!-- Form Page -->
+                        <div id="contacts" class="container tab-pane fade p-4">
+                            <h2>Contact Me</h2>
+                            <p>My emails and phone number are found at the end of the page.</p>
+                            <p>You can also submit an email through here:</p>
+                            
+                            <form action="submitted-form.html" method="GET">
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address*</label>
+                                    <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="your@email.com" required class="form-control textarea" id="exampleFormControlInput1">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Enter input here:</label>
+                                    <textarea required class="form-control textarea" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <br>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Send me a copy of this email</label>
+                                </div>
+                                <br>
+                                <button type="submit" type="submit" value="Submit" class="btn btn-primary">Send</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div> 

@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
 }
 
-.background {
+.centercontent {
     justify-content: center;
 }
 
@@ -163,6 +163,43 @@ p b{
     color: black!important;
 }
 
+label {
+    padding-bottom: 5px;
+}
+
+.textarea:hover{
+    outline: 2px solid var(--pink);
+    border: var(--pink);
+}
+
+.textarea:focus {
+    outline: 2px solid var(--pink);
+    border: var(--pink);
+    box-shadow: 0 0 15px var(--pink);
+}
+
+input[type="checkbox"]:active, input[type="checkbox"]:checked {
+  background-color: var(--pink);
+    outline: 2px solid var(--pink);
+    border: var(--pink);
+    box-shadow: 0 0 5px var(--pink);
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px solid var(--pink);
+    border: var(--pink);
+    box-shadow: 0 0 15px var(--pink);
+}
+
+.btn {
+    background: var(--purple);
+    border-style: hidden;
+}
+
+.btn:hover {
+    background: var(--pink);
+}
+
 #footer {
     color: var(--dark-purple);
     font-size: 90%;
@@ -170,7 +207,7 @@ p b{
 
 #footer p a{
     text-decoration: none;
-    color: var(--purple);
+    color: var(--dark-purple);
 }
 
 #footer p a:hover{
